@@ -1,8 +1,18 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&width=435&lines=Hi%2C+I%27m+Orgho+Das+%F0%9F%91%8B;Programmer+%7C+Tech+Enthusiast;Problem+Solver+%7C+BRACU+Undergrad" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&width=435&lines=Hi%2C+I'm+Orgho+Das+%F0%9F%91%8B;Programmer+%7C+Tech+Enthusiast;Problem+Solver+%7C+BRACU+Undergrad" alt="Typing SVG" />
 </p>
 
----
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=orghoDas&show_icons=true&hide_title=false&rank_icon=github&theme=tokyonight&hide_border=false&custom_title=Orgho%20Das's%20GitHub%20Stats&count_private=true" alt="Orgho's GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=orghoDas&theme=tokyonight&hide_border=false" alt="Orgho's Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=orghoDas&layout=compact&theme=tokyonight&hide_border=false" alt="Top Languages" />
+</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=orghoDas&style=flat-square" alt="profile views" />
@@ -41,16 +51,6 @@
 
 ---
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=orghoDas&show_icons=true&hide_title=true&theme=default" height="150"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=orghoDas&theme=default" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=orghoDas&layout=compact&langs_count=6&hide_title=true&theme=default" height="150"/>
-</p>
-
----
-
 ### 🌐 Connect with me
 
 <p>
@@ -62,7 +62,6 @@
   </a>
 </p>
 
-<!-- Optional, add a cool gif or image below! -->
-<p align="right">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjVmZmE4N2M4YjFjMmM1ZDYwYjk2MWU0NTcyNGE5MmExMTQ0ZDExZCZjdD1n/26tn33aiTi1jkl6H6/giphy.gif" width="120" alt="Coder GIF" />
+<p align="center">
+  <strong>Rank: Aspiring Professional</strong>
 </p>
