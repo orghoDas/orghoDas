@@ -39,7 +39,3 @@
     <img src="https://img.shields.io/badge/Facebook-1877F2?style=flat&logo=facebook&logoColor=white" />
   </a>
 </p>
-
-<p align="center">
-  <strong>Rank: Aspiring Professional</strong>
-</p>
