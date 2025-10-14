@@ -1,25 +1,3 @@
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&width=435&lines=Hi%2C+I'm+Orgho+Das+%F0%9F%91%8B;Programmer+%7C+Tech+Enthusiast;Problem+Solver+%7C+BRACU+Undergrad" alt="Typing SVG" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=orghoDas&show_icons=true&hide_title=false&rank_icon=github&theme=tokyonight&hide_border=false&custom_title=Orgho%20Das's%20GitHub%20Stats&count_private=true" alt="Orgho's GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=orghoDas&theme=tokyonight&hide_border=false" alt="Orgho's Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=orghoDas&layout=compact&theme=tokyonight&hide_border=false" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=orghoDas&style=flat-square" alt="profile views" />
-</p>
-
----
-
 ### 👨‍💻 About Me
 
 - 🎓 **Undergraduate Student** at BRAC University
