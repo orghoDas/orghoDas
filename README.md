@@ -1,101 +1,82 @@
-<div align="center">
-
-# Orgho Das
-
-### Full-stack developer focused on AI, NLP, and polished web experiences.
-
-<a href="https://orghodas-portfolio.vercel.app/">
-  <img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-</a>
-<a href="https://www.linkedin.com/in/mrinmoy-das-orgho-5b9075276/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-
-</div>
-
----
-
-```txt
-currently_building:
-  - intelligent web apps
-  - NLP and semantic search systems
-  - clean, fast interfaces with React and Tailwind
-
-interested_in:
-  - retrieval augmented generation
-  - vector databases
-  - applied machine learning
-  - graphics programming
-```
-
-## About me
-
-I work across the stack, from sharp frontend interfaces to backend systems and ML/NLP pipelines. I like building things that feel useful, fast, and thoughtfully designed.
-
-My current focus is on Python, TypeScript, AI tooling, semantic search, and production-friendly developer experiences.
-
-## Tech stack
-
-### Languages
-
-![Python](https://img.shields.io/badge/Python-0D1117?style=flat&logo=python&logoColor=3776AB)
-![JavaScript](https://img.shields.io/badge/JavaScript-0D1117?style=flat&logo=javascript&logoColor=F7DF1E)
-![TypeScript](https://img.shields.io/badge/TypeScript-0D1117?style=flat&logo=typescript&logoColor=3178C6)
-
-### Frontend
-
-![React](https://img.shields.io/badge/React-0D1117?style=flat&logo=react&logoColor=61DAFB)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0D1117?style=flat&logo=tailwindcss&logoColor=06B6D4)
-
-### Backend and data
-
-![FastAPI](https://img.shields.io/badge/FastAPI-0D1117?style=flat&logo=fastapi&logoColor=009688)
-![Node.js](https://img.shields.io/badge/Node.js-0D1117?style=flat&logo=nodedotjs&logoColor=5FA04E)
-![PostgreSQL](https://img.shields.io/badge/NeonDB-0D1117?style=flat&logo=postgresql&logoColor=4169E1)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-0D1117?style=flat&logo=databricks&logoColor=FF3621)
-
-### ML, NLP, and graphics
-
-![PyTorch](https://img.shields.io/badge/PyTorch-0D1117?style=flat&logo=pytorch&logoColor=EE4C2C)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-0D1117?style=flat&logo=scikitlearn&logoColor=F7931E)
-![Hugging Face](https://img.shields.io/badge/Hugging_Face-0D1117?style=flat&logo=huggingface&logoColor=FFD21E)
-![OpenGL](https://img.shields.io/badge/OpenGL-0D1117?style=flat&logo=opengl&logoColor=5586A4)
-
-`SentenceTransformers` `TF-IDF` `Word2Vec` `Vector Search` `Semantic Retrieval`
-
-## Featured work
-
-Projects are coming soon. For now, I am using this space to build in public and keep the profile focused on the stack I work with.
-
 <!--
-When you are ready to add projects, replace this section with:
-
-| Project | What it does | Stack |
-| --- | --- | --- |
-| Project name | Short one-line description | Python, FastAPI, React |
-| Project name | Short one-line description | TypeScript, Tailwind |
+  GitHub Profile README for @orghoDas
+  Repo must be named exactly "orghoDas" for GitHub to render this on your profile.
 -->
 
-## GitHub activity
+<h1 align="center">Hi, I'm orghoDas 👋</h1>
+<h3 align="center">Full-stack developer — building things that you would love to use.</h3>
 
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=orghodas&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&cache_seconds=21600" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=orghodas&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&cache_seconds=21600" alt="Top languages" />
-
-</div>
-
-## Connect
-
-I am always open to learning, collaborating, and building useful things.
-
-- Portfolio: [orghodas-portfolio.vercel.app](https://orghodas-portfolio.vercel.app/)
-- LinkedIn: [mrinmoy-das-orgho](https://www.linkedin.com/in/mrinmoy-das-orgho-5b9075276/)
+<p align="center">
+  <a href="https://github.com/orghoDas?tab=followers">
+    <img src="https://img.shields.io/github/followers/orghoDas?label=Follow&style=social" alt="GitHub followers" />
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=orghoDas&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
+</p>
 
 ---
 
-<div align="center">
+### 🚀 About Me
 
-<sub>Clean code. Useful systems. Better interfaces.</sub>
+- 🔭 I'm currently **building backend systems**
+- 🌱 I'm learning to **build full AI systems — from the backend DB to the frontend UI**
+- 💬 Ask me about **anything**
+- ⚡ Fun fact: **I love to eat** 🍜
 
-</div>
+---
+
+### 🛠️ Tech Stack
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+<!-- Remove badges you don't use; grab more at https://simpleicons.org (use the slug after logo=) -->
+
+---
+
+### 📊 GitHub Stats
+
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=orghoDas&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="orghoDas's GitHub stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=orghoDas&layout=compact&theme=tokyonight" alt="Top languages" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=orghoDas&theme=tokyonight" alt="GitHub streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=orghoDas&theme=tokyonight&no-frame=true&row=1&column=7" alt="GitHub trophies" />
+</p>
+
+---
+
+### 📌 Featured Projects
+
+| Project | Description | Tech |
+| --- | --- | --- |
+| [inkline](https://github.com/orghoDas/inkline) | A Medium-style writing app — publish stories, engage readers, with publications and admin moderation tools. | JavaScript, Node.js, PostgreSQL, Prisma |
+
+<!-- Tip: pin these same repos on your profile (Customize your pins) so they show as cards too. -->
+
+---
+
+### 🤝 Connect With Me
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/mrinmoy-das-orgho-5b9075276">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://orghodas-portfolio.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-4A90D9?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
+  </a>
+  <a href="mailto:mcguireon@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</p>
