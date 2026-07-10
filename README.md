@@ -43,16 +43,7 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=orghoDas&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="orghoDas's GitHub stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=orghoDas&layout=compact&theme=tokyonight" alt="Top languages" />
-</p>
-
-<p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=orghoDas&theme=tokyonight" alt="GitHub streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=orghoDas&theme=tokyonight&no-frame=true&row=1&column=7" alt="GitHub trophies" />
 </p>
 
 ---
