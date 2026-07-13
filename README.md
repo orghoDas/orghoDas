@@ -44,7 +44,7 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=orghoDas&show_icons=true&theme=tokyonight&count_private=true" alt="orghoDas's GitHub stats" />
+  <img src="https://github-readme-stats-three-blush-86.vercel.app/api?username=orghoDas&show_icons=true&theme=tokyonight&count_private=true" alt="orghoDas's GitHub stats" />
 </p>
 
 <p align="center">
@@ -52,7 +52,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=orghoDas&layout=compact&theme=tokyonight" alt="Top languages" />
+  <img src="https://github-readme-stats-three-blush-86.vercel.app/api/top-langs/?username=orghoDas&layout=compact&theme=tokyonight" alt="Top languages" />
 </p>
 
 ---
