@@ -31,6 +31,7 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
@@ -43,7 +44,15 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=orghoDas&theme=tokyonight" alt="GitHub streak" />
+  <img src="https://github-readme-stats.vercel.app/api?username=orghoDas&show_icons=true&theme=tokyonight&count_private=true" alt="orghoDas's GitHub stats" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=orghoDas&theme=tokyonight" alt="GitHub streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=orghoDas&layout=compact&theme=tokyonight" alt="Top languages" />
 </p>
 
 ---
