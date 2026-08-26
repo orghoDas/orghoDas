@@ -1,203 +1,242 @@
-<div align="center">
+<!--
+    ORGHO DAS · PROFILE README
 
-<img src="YOUR_BANNER_IMAGE_URL_HERE" width="100%"/>
-
-<br/>
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=2500&pause=800&color=FF6B00&center=true&vCenter=true&width=700&lines=Software+Engineer;Full+Stack+Developer;AI+Systems+Builder;Creating+Digital+Products"/>
-
-</div>
+    Custom SVG driven profile system
+-->
 
 
-# 👋 Hey, I'm Orgho Das
+<picture>
 
-Software Engineer focused on building scalable applications, intelligent systems, and digital products.
+<source 
+media="(prefers-color-scheme: dark)" 
+srcset="assets/header-dark.svg">
 
-I enjoy working at the intersection of:
+<source 
+media="(prefers-color-scheme: light)" 
+srcset="assets/header-light.svg">
 
-- Full Stack Development
-- Artificial Intelligence
-- Product Engineering
-- Automation
-- Research
+<img 
+src="assets/header-dark.svg"
+width="100%"
+alt="Orgho Das">
 
-
-Currently exploring how technology can solve practical problems through elegant software systems.
-
-
----
-
-# 🚧 Currently Building
+</picture>
 
 
-### AI Powered Applications
+<br>
 
-Exploring intelligent applications using:
-
-- Large Language Models
-- AI Agents
-- Retrieval Augmented Generation
-- Automation workflows
-
-
-### Scalable Software Systems
-
-Building modern applications with:
-
-- Clean backend architecture
-- Database driven systems
-- Cloud infrastructure
-- User focused experiences
-
-
-### Research
-
-Interested in:
-
-- AI Security
-- Cyber Physical Systems
-- Human Computer Interaction
-- Intelligent Software Systems
-
-
----
-
-# 🚀 Featured Projects
-
-
-<table>
-<tr>
-
-<td width="50%">
-
-<h3 align="center">Inkline</h3>
 
 <p align="center">
 
-<img src="INKLINE_SCREENSHOT_URL" width="90%"/>
-
-</p>
-
-<p align="center">
-A platform focused on delivering a modern digital experience through thoughtful design and scalable engineering.
-</p>
-
-<p align="center">
-
-React • Next.js • Backend Systems
-
-</p>
-
-</td>
+<a href="https://www.linkedin.com/in/mrinmoy-das-orgho-5b9075276">
+<img 
+src="https://img.shields.io/badge/LINKEDIN-ffffff?style=flat-square&logo=linkedin&logoColor=000000">
+</a>
 
 
-<td width="50%">
+<a href="mailto:mcguireon@gmail.com">
+<img 
+src="https://img.shields.io/badge/EMAIL-ffffff?style=flat-square&logo=gmail&logoColor=000000">
+</a>
 
-<h3 align="center">Nobojatra</h3>
-
-<p align="center">
-
-<img src="NOBOJATRA_SCREENSHOT_URL" width="90%"/>
-
-</p>
-
-<p align="center">
-A digital platform built to create meaningful user experiences through technology.
-</p>
-
-<p align="center">
-
-Full Stack • Product Development
-
-</p>
-
-</td>
-
-</tr>
-</table>
-
-
----
-
-# 🛠️ Tech Stack
-
-
-### Languages
-
-<p>
-<img src="https://skillicons.dev/icons?i=python,typescript,javascript,java,cpp"/>
-</p>
-
-
-### Frontend
-
-<p>
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind"/>
-</p>
-
-
-### Backend
-
-<p>
-<img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,postgres,mongodb"/>
-</p>
-
-
-### Tools
-
-<p>
-<img src="https://skillicons.dev/icons?i=docker,git,github,linux,aws"/>
-</p>
-
-
----
-
-# 📊 GitHub Analytics
-
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=orghoDas&show_icons=true&theme=transparent&hide_border=true"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=orghoDas&layout=compact&theme=transparent&hide_border=true"/>
-
-</div>
-
-
----
-
-# 🐍 Contribution Activity
-
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/orghoDas/orghoDas/output/github-contribution-grid-snake.svg"/>
-
-</div>
-
-
----
-
-# 🌐 Connect With Me
-
-
-<div align="center">
 
 <a href="https://github.com/orghoDas">
-<img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github"/>
+<img 
+src="https://img.shields.io/badge/GITHUB-ffffff?style=flat-square&logo=github&logoColor=000000">
 </a>
 
-<a href="YOUR_LINKEDIN">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"/>
+
+</p>
+
+
+<br>
+
+
+<picture>
+
+<source
+media="(prefers-color-scheme: dark)"
+srcset="assets/whoami-dark.svg">
+
+<source
+media="(prefers-color-scheme: light)"
+srcset="assets/whoami-light.svg">
+
+<img
+src="assets/whoami-dark.svg"
+width="100%"
+alt="01 whoami">
+
+</picture>
+
+
+<br>
+
+
+<picture>
+
+<source
+media="(prefers-color-scheme: dark)"
+srcset="assets/ecosystem-dark.svg">
+
+<source
+media="(prefers-color-scheme: light)"
+srcset="assets/ecosystem-light.svg">
+
+<img
+src="assets/ecosystem-dark.svg"
+width="100%"
+alt="02 ecosystem">
+
+</picture>
+
+
+<br>
+
+
+<picture>
+
+<source
+media="(prefers-color-scheme: dark)"
+srcset="assets/projects-dark.svg">
+
+<source
+media="(prefers-color-scheme: light)"
+srcset="assets/projects-light.svg">
+
+<img
+src="assets/projects-dark.svg"
+width="100%"
+alt="03 projects">
+
+</picture>
+
+
+<br>
+
+
+<p align="center">
+
+<a href="#">
+<img
+src="assets/proj-inkline-dark.svg"
+width="49%"
+alt="Inkline">
 </a>
 
-</div>
+
+<a href="#">
+<img
+src="assets/proj-nobojatra-dark.svg"
+width="49%"
+alt="Nobojatra">
+</a>
+
+</p>
 
 
-<br/>
+<br>
 
-<div align="center">
 
-"Building software that turns ideas into reality."
+<picture>
 
-</div>
+<source
+media="(prefers-color-scheme: dark)"
+srcset="assets/telemetry-dark.svg">
+
+<source
+media="(prefers-color-scheme: light)"
+srcset="assets/telemetry-light.svg">
+
+<img
+src="assets/telemetry-dark.svg"
+width="100%"
+alt="04 telemetry">
+
+</picture>
+
+
+<br>
+
+
+<picture>
+
+<source
+media="(prefers-color-scheme: dark)"
+srcset="https://github-readme-activity-graph.vercel.app/graph?username=orghoDas&hide_border=true&radius=0&area=true&custom_title=CONTRIBUTION%20TELEMETRY&bg_color=00000000&color=8b949e&line=FF8C32&point=FF8C32">
+
+
+<source
+media="(prefers-color-scheme: light)"
+srcset="https://github-readme-activity-graph.vercel.app/graph?username=orghoDas&hide_border=true&radius=0&area=true&custom_title=CONTRIBUTION%20TELEMETRY&bg_color=ffffff&color=57606a&line=FF8C32&point=FF8C32">
+
+
+<img
+src="https://github-readme-activity-graph.vercel.app/graph?username=orghoDas"
+width="100%"
+alt="Contribution graph">
+
+</picture>
+
+
+<br>
+
+
+<picture>
+
+<source
+media="(prefers-color-scheme: dark)"
+srcset="assets/route-dark.svg">
+
+<source
+media="(prefers-color-scheme: light)"
+srcset="assets/route-light.svg">
+
+<img
+src="assets/route-dark.svg"
+width="100%"
+alt="05 route">
+
+</picture>
+
+
+<br>
+
+
+<picture>
+
+<source
+media="(prefers-color-scheme: dark)"
+srcset="assets/stack-dark.svg">
+
+<source
+media="(prefers-color-scheme: light)"
+srcset="assets/stack-light.svg">
+
+<img
+src="assets/stack-dark.svg"
+width="100%"
+alt="06 stack">
+
+</picture>
+
+
+<br>
+
+
+<picture>
+
+<source
+media="(prefers-color-scheme: dark)"
+srcset="assets/footer-dark.svg">
+
+<source
+media="(prefers-color-scheme: light)"
+srcset="assets/footer-light.svg">
+
+<img
+src="assets/footer-dark.svg"
+width="100%"
+alt="status">
+
+</picture>

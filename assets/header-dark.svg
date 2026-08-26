@@ -1,0 +1,18 @@
+<svg width="1200" height="320" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="g" x2="1">
+<stop stop-color="#FF8C32"/>
+<stop offset="1" stop-color="#FF5A00"/>
+</linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M40 0H0V40" fill="none" stroke="#1d1d1d"/>
+</pattern>
+</defs>
+<rect width="1200" height="320" fill="#090909"/>
+<rect width="1200" height="320" fill="url(#grid)" opacity=".35"/>
+<rect x="70" y="250" width="1060" height="2" fill="url(#g)"/>
+<text x="70" y="120" fill="#fff" font-family="monospace" font-size="68" font-weight="700">ORGHO DAS</text>
+<text x="75" y="170" fill="#FF8C32" font-family="monospace" font-size="22">SOFTWARE ENGINEER</text>
+<text x="75" y="210" fill="#8B949E" font-family="monospace" font-size="18">AI SYSTEMS • FULL STACK • PRODUCT ENGINEERING</text>
+<text x="1000" y="190" fill="#FF8C32" font-family="monospace" font-size="38">_</text>
+</svg>

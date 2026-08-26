@@ -1,0 +1,10 @@
+<svg width="1200 height="400" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="400" fill="#090909"/>
+<text x="70" y="65" fill="#FF8C32" font-family="monospace" font-size="20">01 — WHOAMI</text>
+<text x="70" y="140" fill="#fff" font-family="monospace" font-size="34">builder</text>
+<text x="70" y="185" fill="#8B949E" font-family="monospace" font-size="22">software engineer</text>
+<text x="650" y="140" fill="#fff" font-family="monospace" font-size="34">focus</text>
+<text x="650" y="185" fill="#8B949E" font-family="monospace" font-size="22">AI applications</text>
+<text x="650" y="220" fill="#8B949E" font-family="monospace" font-size="22">product systems</text>
+<text x="650" y="255" fill="#8B949E" font-family="monospace" font-size="22">intelligent software</text>
+</svg>
