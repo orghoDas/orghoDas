@@ -1,69 +1,125 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:434343&height=200&section=header&text=Orgho%20Das&fontSize=70&fontColor=ffffff&animation=fadeIn" />
+<img src="YOUR_BANNER_IMAGE_URL_HERE" width="100%"/>
 
-<h3>
-Software Engineer • AI Builder • Research Enthusiast
-</h3>
+<br/>
 
-<p>
-Building intelligent systems, scalable applications, and automation platforms.
-</p>
-
-<p>
-<a href="https://github.com/orghoDas">
-<img src="https://img.shields.io/github/followers/orghoDas?style=for-the-badge&logo=github"/>
-</a>
-
-<a href="https://linkedin.com">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/>
-</a>
-
-</p>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=2500&pause=800&color=FF6B00&center=true&vCenter=true&width=700&lines=Software+Engineer;Full+Stack+Developer;AI+Systems+Builder;Creating+Digital+Products"/>
 
 </div>
 
 
-## 👋 About Me
+# 👋 Hey, I'm Orgho Das
 
-I'm Orgho Das, a software engineer passionate about building practical solutions at the intersection of:
+Software Engineer focused on building scalable applications, intelligent systems, and digital products.
 
-- Artificial Intelligence
+I enjoy working at the intersection of:
+
 - Full Stack Development
-- Business Automation
-- Cyber Security
-- Data Driven Systems
+- Artificial Intelligence
+- Product Engineering
+- Automation
+- Research
 
 
-Currently exploring how intelligent software can solve real-world operational problems through automation, AI agents, and scalable architectures.
+Currently exploring how technology can solve practical problems through elegant software systems.
 
 
-## 🚀 What I Build
+---
+
+# 🚧 Currently Building
+
 
 ### AI Powered Applications
 
-- LLM based applications
-- Retrieval Augmented Generation (RAG) systems
-- AI automation workflows
-- Intelligent assistants
+Exploring intelligent applications using:
+
+- Large Language Models
+- AI Agents
+- Retrieval Augmented Generation
+- Automation workflows
 
 
-### Business Systems
+### Scalable Software Systems
 
-- ERP platforms
-- CRM solutions
-- Internal management systems
-- Workflow automation tools
+Building modern applications with:
 
-
-### Full Stack Applications
-
-- Modern web applications
-- Scalable backend architectures
-- Cloud based solutions
+- Clean backend architecture
+- Database driven systems
+- Cloud infrastructure
+- User focused experiences
 
 
-## 🛠️ Tech Stack
+### Research
+
+Interested in:
+
+- AI Security
+- Cyber Physical Systems
+- Human Computer Interaction
+- Intelligent Software Systems
+
+
+---
+
+# 🚀 Featured Projects
+
+
+<table>
+<tr>
+
+<td width="50%">
+
+<h3 align="center">Inkline</h3>
+
+<p align="center">
+
+<img src="INKLINE_SCREENSHOT_URL" width="90%"/>
+
+</p>
+
+<p align="center">
+A platform focused on delivering a modern digital experience through thoughtful design and scalable engineering.
+</p>
+
+<p align="center">
+
+React • Next.js • Backend Systems
+
+</p>
+
+</td>
+
+
+<td width="50%">
+
+<h3 align="center">Nobojatra</h3>
+
+<p align="center">
+
+<img src="NOBOJATRA_SCREENSHOT_URL" width="90%"/>
+
+</p>
+
+<p align="center">
+A digital platform built to create meaningful user experiences through technology.
+</p>
+
+<p align="center">
+
+Full Stack • Product Development
+
+</p>
+
+</td>
+
+</tr>
+</table>
+
+
+---
+
+# 🛠️ Tech Stack
 
 
 ### Languages
@@ -87,75 +143,14 @@ Currently exploring how intelligent software can solve real-world operational pr
 </p>
 
 
-### AI / Data
-
-<p>
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow"/>
-</p>
-
-
-### Tools & Infrastructure
+### Tools
 
 <p>
 <img src="https://skillicons.dev/icons?i=docker,git,github,linux,aws"/>
 </p>
 
 
-# 🔥 Featured Projects
-
-
-## AI Business Intelligence Platform
-
-AI powered system for analyzing business data, generating insights, and supporting decision making.
-
-**Stack**
-
-Python • LLMs • Data Processing • Automation
-
-
 ---
-
-
-## Enterprise Workflow & ERP Systems
-
-Designing operational platforms that help organizations manage:
-
-- Operations
-- Customer workflows
-- Data management
-- Internal processes
-
-
-**Stack**
-
-React • Node.js • PostgreSQL • Cloud Infrastructure
-
-
----
-
-
-## Cyber Physical Systems Security Research
-
-Exploring security challenges created by integrating AI models into cyber physical systems.
-
-Research interests:
-
-- AI Security
-- Threat Intelligence
-- Critical Infrastructure Protection
-
-
-
-# 📚 Research Interests
-
-Currently interested in:
-
-- Artificial Intelligence Security
-- AI Agents
-- Cyber Physical Systems
-- Human Computer Interaction
-- Business Intelligence
-
 
 # 📊 GitHub Analytics
 
@@ -169,6 +164,8 @@ Currently interested in:
 </div>
 
 
+---
+
 # 🐍 Contribution Activity
 
 
@@ -179,24 +176,28 @@ Currently interested in:
 </div>
 
 
-# 🌐 Connect
+---
+
+# 🌐 Connect With Me
 
 
 <div align="center">
 
 <a href="https://github.com/orghoDas">
-<img src="https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github"/>
+<img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github"/>
 </a>
 
-<a href="https://linkedin.com">
-<img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin"/>
+<a href="YOUR_LINKEDIN">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"/>
 </a>
 
 </div>
 
 
+<br/>
+
 <div align="center">
 
-### "Building technology that turns ideas into systems."
+"Building software that turns ideas into reality."
 
 </div>
