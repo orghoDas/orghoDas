@@ -1,6 +1,30 @@
-<svg width="1200" height="220" xmlns="http://www.w3.org/2000/svg">
-<rect width="1200" height="220" fill="#090909"/>
-<text x="70" y="75" fill="#FF8C32" font-family="monospace" font-size="20">ECOSYSTEM-DARK</text>
-<text x="70" y="135" fill="#fff" font-family="monospace" font-size="32">ONLINE ●</text>
-<text x="70" y="175" fill="#8B949E" font-family="monospace" font-size="20">$ mode: shipping</text>
+<svg width="1200" height="420" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M40 0H0V40" fill="none" stroke="#1d1d1d"/>
+</pattern>
+<linearGradient id="orange">
+<stop stop-color="#FFB05C"/>
+<stop offset="1" stop-color="#FF6B00"/>
+</linearGradient>
+</defs>
+
+<rect width="1200" height="420" fill="#090909"/>
+<rect width="1200" height="420" fill="url(#grid)" opacity="0.25"/>
+
+<text x="70" y="70" fill="#FF8C32" font-family="monospace" font-size="20">02 — ECOSYSTEM</text>
+
+<text x="70" y="145" fill="#fff" font-family="monospace" font-size="28">PRODUCTS</text>
+<text x="70" y="200" fill="#8B949E" font-family="monospace" font-size="22">INKLINE</text>
+<text x="70" y="240" fill="#8B949E" font-family="monospace" font-size="22">NOBOJATRA</text>
+
+<text x="500" y="145" fill="#fff" font-family="monospace" font-size="28">SYSTEMS</text>
+<text x="500" y="200" fill="#8B949E" font-family="monospace" font-size="22">Frontend</text>
+<text x="500" y="240" fill="#8B949E" font-family="monospace" font-size="22">Backend</text>
+<text x="500" y="280" fill="#8B949E" font-family="monospace" font-size="22">Cloud</text>
+
+<text x="850" y="145" fill="#fff" font-family="monospace" font-size="28">RESEARCH</text>
+<text x="850" y="200" fill="#8B949E" font-family="monospace" font-size="22">AI Security</text>
+<text x="850" y="240" fill="#8B949E" font-family="monospace" font-size="22">CPS</text>
 </svg>

@@ -1,6 +1,9 @@
-<svg width="1200" height="220" xmlns="http://www.w3.org/2000/svg">
-<rect width="1200" height="220" fill="#090909"/>
-<text x="70" y="75" fill="#FF8C32" font-family="monospace" font-size="20">PROJ-INKLINE-DARK</text>
-<text x="70" y="135" fill="#fff" font-family="monospace" font-size="32">ONLINE ●</text>
-<text x="70" y="175" fill="#8B949E" font-family="monospace" font-size="20">$ mode: shipping</text>
+<svg width="600" height="500" xmlns="http://www.w3.org/2000/svg">
+<rect width="600" height="500" rx="18" fill="#111"/>
+<rect x="25" y="25" width="550" height="250" rx="10" fill="#1b1b1b"/>
+<text x="40" y="70" fill="#FF8C32" font-family="monospace" font-size="16">PROJECT</text>
+<text x="40" y="130" fill="#fff" font-family="monospace" font-size="34">INKLINE</text>
+<text x="40" y="340" fill="#fff" font-family="monospace" font-size="20">Stories worth slowing down for.</text>
+<text x="40" y="390" fill="#8B949E" font-family="monospace" font-size="16">NEXT.JS • REACT • PRODUCT DESIGN</text>
+<text x="40" y="450" fill="#FF8C32" font-family="monospace" font-size="16">● ACTIVE</text>
 </svg>

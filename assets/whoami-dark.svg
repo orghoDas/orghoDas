@@ -1,10 +1,27 @@
-<svg width="1200 height="400" xmlns="http://www.w3.org/2000/svg">
-<rect width="1200" height="400" fill="#090909"/>
-<text x="70" y="65" fill="#FF8C32" font-family="monospace" font-size="20">01 — WHOAMI</text>
-<text x="70" y="140" fill="#fff" font-family="monospace" font-size="34">builder</text>
-<text x="70" y="185" fill="#8B949E" font-family="monospace" font-size="22">software engineer</text>
-<text x="650" y="140" fill="#fff" font-family="monospace" font-size="34">focus</text>
-<text x="650" y="185" fill="#8B949E" font-family="monospace" font-size="22">AI applications</text>
-<text x="650" y="220" fill="#8B949E" font-family="monospace" font-size="22">product systems</text>
-<text x="650" y="255" fill="#8B949E" font-family="monospace" font-size="22">intelligent software</text>
+<svg width="1200" height="420" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M40 0H0V40" fill="none" stroke="#1d1d1d"/>
+</pattern>
+<linearGradient id="orange">
+<stop stop-color="#FFB05C"/>
+<stop offset="1" stop-color="#FF6B00"/>
+</linearGradient>
+</defs>
+
+<rect width="1200" height="420" fill="#090909"/>
+<rect width="1200" height="420" fill="url(#grid)" opacity="0.25"/>
+
+<text x="70" y="70" fill="#FF8C32" font-family="monospace" font-size="20">01 — WHOAMI</text>
+
+<text x="70" y="145" fill="#fff" font-family="monospace" font-size="30">identity</text>
+<text x="70" y="195" fill="#8B949E" font-family="monospace" font-size="22">software engineer</text>
+
+<text x="600" y="145" fill="#fff" font-family="monospace" font-size="30">mission</text>
+<text x="600" y="195" fill="#8B949E" font-family="monospace" font-size="21">building intelligent</text>
+<text x="600" y="230" fill="#8B949E" font-family="monospace" font-size="21">digital products</text>
+
+<text x="70" y="330" fill="#FF8C32" font-family="monospace" font-size="18">STATUS</text>
+<text x="180" y="330" fill="#fff" font-family="monospace" font-size="18">shipping systems ●</text>
 </svg>

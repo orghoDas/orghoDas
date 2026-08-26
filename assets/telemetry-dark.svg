@@ -1,6 +1,6 @@
-<svg width="1200" height="220" xmlns="http://www.w3.org/2000/svg">
-<rect width="1200" height="220" fill="#090909"/>
-<text x="70" y="75" fill="#FF8C32" font-family="monospace" font-size="20">TELEMETRY-DARK</text>
-<text x="70" y="135" fill="#fff" font-family="monospace" font-size="32">ONLINE ●</text>
-<text x="70" y="175" fill="#8B949E" font-family="monospace" font-size="20">$ mode: shipping</text>
+<svg width="1200" height="260" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="260" fill="#090909"/>
+<text x="70" y="70" fill="#FF8C32" font-family="monospace" font-size="20">04 — TELEMETRY</text>
+<text x="70" y="150" fill="#fff" font-family="monospace" font-size="34">ONLINE ●</text>
+<text x="70" y="200" fill="#8B949E" font-family="monospace" font-size="20">$ mode: shipping</text>
 </svg>
