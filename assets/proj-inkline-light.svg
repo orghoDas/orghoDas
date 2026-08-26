@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 96" width="410" height="96" font-family="ui-monospace,'SFMono-Regular','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace">
-<defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FF8C32" stop-opacity="0.4"/><stop offset="1" stop-color="#FF8C32" stop-opacity="0"/></linearGradient></defs>
+<defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E05A00" stop-opacity="0.4"/><stop offset="1" stop-color="#E05A00" stop-opacity="0"/></linearGradient></defs>
 <style>
 .fade{animation:fade .9s ease both}
 @keyframes fade{from{opacity:0}}
@@ -12,10 +12,10 @@
 .grow{transform-box:fill-box;transform-origin:left;animation:grow 1.4s ease both .4s}
 @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 </style>
-<rect x="1" y="1" width="408" height="94" rx="8" fill="none" stroke="#30363d" stroke-width="1"/>
-<rect x="1" y="1" width="3" height="94" fill="#FF8C32" opacity="0.7"/>
-<text x="18" y="32" font-size="15" fill="#e6edf3" font-weight="700" text-anchor="start">inkline</text>
-<text x="392" y="32" font-size="11" fill="#FF8C32" font-weight="400" text-anchor="end">javascript · ★ 0</text>
-<text x="18" y="58" font-size="12" fill="#8b949e" font-weight="400" text-anchor="start">stories worth slowing down for</text>
-<text x="18" y="78" font-size="12" fill="#8b949e" font-weight="400" text-anchor="start">next.js · react · product design</text>
+<rect x="1" y="1" width="408" height="94" rx="8" fill="none" stroke="#d0d7de" stroke-width="1"/>
+<rect x="1" y="1" width="3" height="94" fill="#E05A00" opacity="0.7"/>
+<text x="18" y="32" font-size="15" fill="#0d1117" font-weight="700" text-anchor="start">inkline</text>
+<text x="392" y="32" font-size="11" fill="#E05A00" font-weight="400" text-anchor="end">javascript · ★ 0</text>
+<text x="18" y="58" font-size="12" fill="#57606a" font-weight="400" text-anchor="start">stories worth slowing down for</text>
+<text x="18" y="78" font-size="12" fill="#57606a" font-weight="400" text-anchor="start">next.js · react · product design</text>
 </svg>

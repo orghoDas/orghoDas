@@ -1,27 +1,24 @@
-<svg width="1200" height="420" xmlns="http://www.w3.org/2000/svg">
-
-<defs>
-<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-<path d="M40 0H0V40" fill="none" stroke="#1d1d1d"/>
-</pattern>
-<linearGradient id="orange">
-<stop stop-color="#FFB05C"/>
-<stop offset="1" stop-color="#FF6B00"/>
-</linearGradient>
-</defs>
-
-<rect width="1200" height="420" fill="#090909"/>
-<rect width="1200" height="420" fill="url(#grid)" opacity="0.25"/>
-
-<text x="70" y="70" fill="#FF8C32" font-family="monospace" font-size="20">01 — WHOAMI</text>
-
-<text x="70" y="145" fill="#fff" font-family="monospace" font-size="30">identity</text>
-<text x="70" y="195" fill="#8B949E" font-family="monospace" font-size="22">software engineer</text>
-
-<text x="600" y="145" fill="#fff" font-family="monospace" font-size="30">mission</text>
-<text x="600" y="195" fill="#8B949E" font-family="monospace" font-size="21">building intelligent</text>
-<text x="600" y="230" fill="#8B949E" font-family="monospace" font-size="21">digital products</text>
-
-<text x="70" y="330" fill="#FF8C32" font-family="monospace" font-size="18">STATUS</text>
-<text x="180" y="330" fill="#fff" font-family="monospace" font-size="18">shipping systems ●</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 215" width="880" height="215" font-family="ui-monospace,'SFMono-Regular','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace">
+<defs><linearGradient id="acc" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FFB05C"/><stop offset="1" stop-color="#FF6B00"/></linearGradient></defs>
+<style>
+.fade{animation:fade .9s ease both}
+@keyframes fade{from{opacity:0}}
+.blink{animation:blink 1.1s steps(2,start) infinite}
+@keyframes blink{50%{opacity:0}}
+.ping{transform-box:fill-box;transform-origin:center;animation:ping 2.2s ease-out infinite}
+@keyframes ping{0%{transform:scale(.55);opacity:.8}100%{transform:scale(1.7);opacity:0}}
+.draw{stroke-dasharray:700;animation:draw 2.4s ease both .3s}
+@keyframes draw{from{stroke-dashoffset:700}to{stroke-dashoffset:0}}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 1.4s ease both .4s}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+</style>
+<text x="10" y="26" font-size="12" fill="#FF8C32" font-weight="600" text-anchor="start" letter-spacing="3" class="fade">01 — whoami</text><line x1="129.2" y1="21" x2="870" y2="21" stroke="#30363d" stroke-width="1"/>
+<text x="30" y="78" font-size="14" fill="#FF8C32" font-weight="400" text-anchor="start">$</text>
+<text x="52" y="78" font-size="14" fill="#e6edf3" font-weight="600" text-anchor="start">whoami</text>
+<text x="30" y="107" font-size="14" fill="#e6edf3" font-weight="400" text-anchor="start">orgho das — software engineer</text>
+<text x="30" y="136" font-size="14" fill="#8b949e" font-weight="400" text-anchor="start">builds intelligent digital products, end to end.</text>
+<text x="30" y="161" font-size="14" fill="#8b949e" font-weight="400" text-anchor="start">ai systems, full-stack web, and the product thinking between them.</text>
+<text x="30" y="186" font-size="14" fill="#8b949e" font-weight="400" text-anchor="start">writes typescript, javascript &amp; python. thinks in systems.</text>
+<text x="30" y="211" font-size="14" fill="#e6edf3" font-weight="400" text-anchor="start">open to interesting problems → mcguireon@gmail.com</text>
+<rect class="blink" x="450" y="198" width="8" height="15" fill="#FF8C32"/>
 </svg>

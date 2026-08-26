@@ -1,30 +1,43 @@
-<svg width="1200" height="420" xmlns="http://www.w3.org/2000/svg">
-
-<defs>
-<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-<path d="M40 0H0V40" fill="none" stroke="#1d1d1d"/>
-</pattern>
-<linearGradient id="orange">
-<stop stop-color="#FFB05C"/>
-<stop offset="1" stop-color="#FF6B00"/>
-</linearGradient>
-</defs>
-
-<rect width="1200" height="420" fill="#090909"/>
-<rect width="1200" height="420" fill="url(#grid)" opacity="0.25"/>
-
-<text x="70" y="70" fill="#FF8C32" font-family="monospace" font-size="20">02 — ECOSYSTEM</text>
-
-<text x="70" y="145" fill="#fff" font-family="monospace" font-size="28">PRODUCTS</text>
-<text x="70" y="200" fill="#8B949E" font-family="monospace" font-size="22">INKLINE</text>
-<text x="70" y="240" fill="#8B949E" font-family="monospace" font-size="22">NOBOJATRA</text>
-
-<text x="500" y="145" fill="#fff" font-family="monospace" font-size="28">SYSTEMS</text>
-<text x="500" y="200" fill="#8B949E" font-family="monospace" font-size="22">Frontend</text>
-<text x="500" y="240" fill="#8B949E" font-family="monospace" font-size="22">Backend</text>
-<text x="500" y="280" fill="#8B949E" font-family="monospace" font-size="22">Cloud</text>
-
-<text x="850" y="145" fill="#fff" font-family="monospace" font-size="28">RESEARCH</text>
-<text x="850" y="200" fill="#8B949E" font-family="monospace" font-size="22">AI Security</text>
-<text x="850" y="240" fill="#8B949E" font-family="monospace" font-size="22">CPS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 355" width="880" height="355" font-family="ui-monospace,'SFMono-Regular','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace">
+<defs><linearGradient id="acc" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FFB05C"/><stop offset="1" stop-color="#FF6B00"/></linearGradient></defs>
+<style>
+.fade{animation:fade .9s ease both}
+@keyframes fade{from{opacity:0}}
+.blink{animation:blink 1.1s steps(2,start) infinite}
+@keyframes blink{50%{opacity:0}}
+.ping{transform-box:fill-box;transform-origin:center;animation:ping 2.2s ease-out infinite}
+@keyframes ping{0%{transform:scale(.55);opacity:.8}100%{transform:scale(1.7);opacity:0}}
+.draw{stroke-dasharray:700;animation:draw 2.4s ease both .3s}
+@keyframes draw{from{stroke-dashoffset:700}to{stroke-dashoffset:0}}
+.grow{transform-box:fill-box;transform-origin:left;animation:grow 1.4s ease both .4s}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+</style>
+<text x="10" y="26" font-size="12" fill="#FF8C32" font-weight="600" text-anchor="start" letter-spacing="3" class="fade">02 — system map</text><line x1="158" y1="21" x2="870" y2="21" stroke="#30363d" stroke-width="1"/>
+<line x1="381" y1="182" x2="150" y2="120" stroke="#30363d" stroke-width="1" stroke-dasharray="3 5"/>
+<line x1="440" y1="172" x2="440" y2="86" stroke="#30363d" stroke-width="1" stroke-dasharray="3 5"/>
+<line x1="499" y1="182" x2="730" y2="120" stroke="#30363d" stroke-width="1" stroke-dasharray="3 5"/>
+<line x1="381" y1="202" x2="150" y2="272" stroke="#30363d" stroke-width="1" stroke-dasharray="3 5"/>
+<line x1="440" y1="212" x2="440" y2="312" stroke="#30363d" stroke-width="1" stroke-dasharray="3 5"/>
+<line x1="499" y1="202" x2="730" y2="272" stroke="#30363d" stroke-width="1" stroke-dasharray="3 5"/>
+<circle cx="150" cy="120" r="3.5" fill="#FF8C32"/>
+<text x="150" y="106" font-size="14" fill="#e6edf3" font-weight="600" text-anchor="middle">products</text>
+<text x="150" y="144" font-size="11" fill="#8b949e" font-weight="400" text-anchor="middle">inkline · nobojatra</text>
+<circle cx="440" cy="86" r="3.5" fill="#FF8C32"/>
+<text x="440" y="72" font-size="14" fill="#e6edf3" font-weight="600" text-anchor="middle">ai</text>
+<text x="440" y="110" font-size="11" fill="#8b949e" font-weight="400" text-anchor="middle">agents · llm apps · rag</text>
+<circle cx="730" cy="120" r="3.5" fill="#FF8C32"/>
+<text x="730" y="106" font-size="14" fill="#e6edf3" font-weight="600" text-anchor="middle">frontend</text>
+<text x="730" y="144" font-size="11" fill="#8b949e" font-weight="400" text-anchor="middle">react · next · typescript</text>
+<circle cx="150" cy="272" r="3.5" fill="#FF8C32"/>
+<text x="150" y="258" font-size="14" fill="#e6edf3" font-weight="600" text-anchor="middle">research</text>
+<text x="150" y="296" font-size="11" fill="#8b949e" font-weight="400" text-anchor="middle">ai security · cyber-physical systems</text>
+<circle cx="440" cy="312" r="3.5" fill="#FF8C32"/>
+<text x="440" y="298" font-size="14" fill="#e6edf3" font-weight="600" text-anchor="middle">backend</text>
+<text x="440" y="336" font-size="11" fill="#8b949e" font-weight="400" text-anchor="middle">node · python · apis</text>
+<circle cx="730" cy="272" r="3.5" fill="#FF8C32"/>
+<text x="730" y="258" font-size="14" fill="#e6edf3" font-weight="600" text-anchor="middle">cloud</text>
+<text x="730" y="296" font-size="11" fill="#8b949e" font-weight="400" text-anchor="middle">docker · ci/cd · deploys</text>
+<circle class="ping" cx="440" cy="192" r="34" fill="none" stroke="#FF8C32" stroke-width="1"/>
+<rect x="370" y="173" width="140" height="38" rx="7" fill="none" stroke="#FF8C32" stroke-width="1.5"/>
+<text x="440" y="197" font-size="14" fill="#e6edf3" font-weight="700" text-anchor="middle" letter-spacing="1">orghodas</text>
 </svg>

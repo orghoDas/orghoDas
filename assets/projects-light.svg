@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 40" width="880" height="40" font-family="ui-monospace,'SFMono-Regular','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace">
-<defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FF8C32" stop-opacity="0.4"/><stop offset="1" stop-color="#FF8C32" stop-opacity="0"/></linearGradient></defs>
+<defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E05A00" stop-opacity="0.4"/><stop offset="1" stop-color="#E05A00" stop-opacity="0"/></linearGradient></defs>
 <style>
 .fade{animation:fade .9s ease both}
 @keyframes fade{from{opacity:0}}
@@ -12,5 +12,5 @@
 .grow{transform-box:fill-box;transform-origin:left;animation:grow 1.4s ease both .4s}
 @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 </style>
-<text x="10" y="26" font-size="12" fill="#FF8C32" font-weight="600" text-anchor="start" letter-spacing="3" class="fade">03 — projects</text><line x1="143.60000000000002" y1="21" x2="870" y2="21" stroke="#30363d" stroke-width="1"/>
+<text x="10" y="26" font-size="12" fill="#E05A00" font-weight="600" text-anchor="start" letter-spacing="3" class="fade">03 — projects</text><line x1="143.60000000000002" y1="21" x2="870" y2="21" stroke="#d0d7de" stroke-width="1"/>
 </svg>

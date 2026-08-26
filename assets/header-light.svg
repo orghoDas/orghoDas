@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 170" width="880" height="170" font-family="ui-monospace,'SFMono-Regular','Cascadia Mono',Menlo,Consolas,'Liberation Mono',monospace">
-<defs><linearGradient id="acc" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FFB05C"/><stop offset="1" stop-color="#FF6B00"/></linearGradient></defs>
+<defs><linearGradient id="acc" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FF8C32"/><stop offset="1" stop-color="#C24600"/></linearGradient></defs>
 <style>
 .fade{animation:fade .9s ease both}
 @keyframes fade{from{opacity:0}}
@@ -12,11 +12,11 @@
 .grow{transform-box:fill-box;transform-origin:left;animation:grow 1.4s ease both .4s}
 @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 </style>
-<path d="M14 34 L14 14 L34 14" fill="none" stroke="#FF8C32" stroke-width="1.5"/>
-<path d="M866 34 L866 14 L846 14" fill="none" stroke="#FF8C32" stroke-width="1.5"/>
-<path d="M14 136 L14 156 L34 156" fill="none" stroke="#FF8C32" stroke-width="1.5"/>
-<path d="M866 136 L866 156 L846 156" fill="none" stroke="#FF8C32" stroke-width="1.5"/>
-<text x="440" y="86" font-size="42" fill="#e6edf3" font-weight="700" text-anchor="middle" letter-spacing="8" class="fade">orgho das</text>
+<path d="M14 34 L14 14 L34 14" fill="none" stroke="#E05A00" stroke-width="1.5"/>
+<path d="M866 34 L866 14 L846 14" fill="none" stroke="#E05A00" stroke-width="1.5"/>
+<path d="M14 136 L14 156 L34 156" fill="none" stroke="#E05A00" stroke-width="1.5"/>
+<path d="M866 136 L866 156 L846 156" fill="none" stroke="#E05A00" stroke-width="1.5"/>
+<text x="440" y="86" font-size="42" fill="#0d1117" font-weight="700" text-anchor="middle" letter-spacing="8" class="fade">orgho das</text>
 <rect class="grow" x="270" y="102" width="340" height="3" fill="url(#acc)"/>
-<text x="440" y="132" font-size="13" fill="#8b949e" font-weight="400" text-anchor="middle" letter-spacing="3" class="fade">orghodas — ai systems · full stack · product engineering</text>
+<text x="440" y="132" font-size="13" fill="#57606a" font-weight="400" text-anchor="middle" letter-spacing="3" class="fade">orghodas — ai systems · full stack · product engineering</text>
 </svg>

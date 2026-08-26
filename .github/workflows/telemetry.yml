@@ -1,0 +1,49 @@
+name: telemetry
+
+# Regenerates the telemetry + projects SVGs from live GitHub data so the
+# numbers, activity line, language bars and star counts stay current with
+# zero manual edits. Commits only when something actually changed.
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # daily ~06:17 UTC
+  workflow_dispatch: {} # manual "Run workflow" button
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/gen-telemetry.mjs"
+      - ".github/workflows/telemetry.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: telemetry
+  cancel-in-progress: true
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: regenerate svgs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/gen-telemetry.mjs
+      - name: commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # --porcelain (not `git diff`) so newly added panels count as a change:
+          # git diff only sees tracked files, so a brand-new proj-*.svg would be
+          # silently skipped and never committed.
+          if [ -z "$(git status --porcelain -- assets)" ]; then
+            echo "no telemetry changes"
+          else
+            git add assets/telemetry-*.svg assets/activity-*.svg assets/projects-*.svg assets/proj-*.svg
+            git commit -m "chore: refresh telemetry [skip ci]"
+            git push
+          fi
