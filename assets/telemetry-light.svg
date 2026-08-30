@@ -23,9 +23,9 @@
 <text x="350" y="128" font-size="30" fill="#0d1117" font-weight="700" text-anchor="start">37</text>
 <text x="350" y="152" font-size="10" fill="#57606a" font-weight="400" text-anchor="start">and counting</text>
 <text x="540" y="92" font-size="11" fill="#57606a" font-weight="400" text-anchor="start" letter-spacing="2">activity pulse</text>
-<polyline class="draw" points="540,150 565,150 589,113.6 614,137 638,147.4 663,139.6 688,139.6 712,139.6 737,129.2 762,150 786,103.2 811,137 835,98 860,137" fill="none" stroke="#E05A00" stroke-width="1.5"/>
-<circle class="ping" cx="860" cy="137" r="6" fill="none" stroke="#E05A00" stroke-width="1"/>
-<circle cx="860" cy="137" r="2.5" fill="#E05A00"/>
+<polyline class="draw" points="540,150 565,113.6 589,137 614,147.4 638,139.6 663,139.6 688,139.6 712,129.2 737,150 762,103.2 786,137 811,98 835,137 860,150" fill="none" stroke="#E05A00" stroke-width="1.5"/>
+<circle class="ping" cx="860" cy="150" r="6" fill="none" stroke="#E05A00" stroke-width="1"/>
+<circle cx="860" cy="150" r="2.5" fill="#E05A00"/>
 <rect class="grow" x="540" y="178" width="308" height="10" fill="#E05A00" opacity="1"/>
 <rect class="grow" x="848" y="178" width="4" height="10" fill="#E05A00" opacity="0.72"/>
 <rect class="grow" x="852" y="178" width="4" height="10" fill="#E05A00" opacity="0.5"/>
