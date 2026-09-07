@@ -20,7 +20,7 @@
 <text x="205" y="128" font-size="30" fill="#e6edf3" font-weight="700" text-anchor="start">21</text>
 <text x="205" y="152" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start">public</text>
 <text x="350" y="92" font-size="11" fill="#8b949e" font-weight="400" text-anchor="start" letter-spacing="2">followers</text>
-<text x="350" y="128" font-size="30" fill="#e6edf3" font-weight="700" text-anchor="start">35</text>
+<text x="350" y="128" font-size="30" fill="#e6edf3" font-weight="700" text-anchor="start">36</text>
 <text x="350" y="152" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start">and counting</text>
 <text x="540" y="92" font-size="11" fill="#8b949e" font-weight="400" text-anchor="start" letter-spacing="2">activity pulse</text>
 <polyline class="draw" points="540,113.6 565,137 589,147.4 614,139.6 638,139.6 663,139.6 688,129.2 712,150 737,103.2 762,137 786,98 811,137 835,134.4 860,150" fill="none" stroke="#FF8C32" stroke-width="1.5"/>
