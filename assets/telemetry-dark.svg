@@ -14,7 +14,7 @@
 </style>
 <text x="10" y="26" font-size="12" fill="#FF8C32" font-weight="600" text-anchor="start" letter-spacing="3" class="fade">04 — telemetry</text><line x1="150.8" y1="21" x2="870" y2="21" stroke="#30363d" stroke-width="1"/>
 <text x="30" y="92" font-size="11" fill="#8b949e" font-weight="400" text-anchor="start" letter-spacing="2">contributions</text>
-<text x="30" y="128" font-size="30" fill="#e6edf3" font-weight="700" text-anchor="start">244+</text>
+<text x="30" y="128" font-size="30" fill="#e6edf3" font-weight="700" text-anchor="start">247+</text>
 <text x="30" y="152" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start">since aug 2020</text>
 <text x="205" y="92" font-size="11" fill="#8b949e" font-weight="400" text-anchor="start" letter-spacing="2">repositories</text>
 <text x="205" y="128" font-size="30" fill="#e6edf3" font-weight="700" text-anchor="start">21</text>
@@ -23,9 +23,9 @@
 <text x="350" y="128" font-size="30" fill="#e6edf3" font-weight="700" text-anchor="start">37</text>
 <text x="350" y="152" font-size="10" fill="#8b949e" font-weight="400" text-anchor="start">and counting</text>
 <text x="540" y="92" font-size="11" fill="#8b949e" font-weight="400" text-anchor="start" letter-spacing="2">activity pulse</text>
-<polyline class="draw" points="540,147.4 565,139.6 589,139.6 614,139.6 638,129.2 663,150 688,103.2 712,137 737,98 762,137 786,134.4 811,150 835,150 860,142.2" fill="none" stroke="#FF8C32" stroke-width="1.5"/>
-<circle class="ping" cx="860" cy="142.2" r="6" fill="none" stroke="#FF8C32" stroke-width="1"/>
-<circle cx="860" cy="142.2" r="2.5" fill="#FF8C32"/>
+<polyline class="draw" points="540,147.4 565,139.6 589,139.6 614,139.6 638,129.2 663,150 688,103.2 712,137 737,98 762,137 786,134.4 811,150 835,150 860,134.4" fill="none" stroke="#FF8C32" stroke-width="1.5"/>
+<circle class="ping" cx="860" cy="134.4" r="6" fill="none" stroke="#FF8C32" stroke-width="1"/>
+<circle cx="860" cy="134.4" r="2.5" fill="#FF8C32"/>
 <rect class="grow" x="540" y="178" width="300" height="10" fill="#FF8C32" opacity="1"/>
 <rect class="grow" x="840" y="178" width="8" height="10" fill="#FF8C32" opacity="0.72"/>
 <rect class="grow" x="848" y="178" width="4" height="10" fill="#FF8C32" opacity="0.5"/>
