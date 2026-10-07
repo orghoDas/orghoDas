@@ -111,8 +111,14 @@ async function collect() {
 
   // star counts for cards that show a star
   const stars = {};
-  for (const p of PROJECTS)
-    if (p.star) stars[p.key] = (await gh(`/repos/${p.star}`)).stargazers_count;
+  for (const p of PROJECTS) {
+    if (!p.star) continue;
+    try {
+      stars[p.key] = (await gh(`/repos/${p.star}`)).stargazers_count;
+    } catch (err) {
+      console.warn(`[telemetry] skipping star count for ${p.star}: ${err.message}`);
+    }
+  }
 
   return { contributions: totalContrib, repos: profile.public_repos, followers: profile.followers, since: created, weeks, days, langBytes, stars };
 }
@@ -273,7 +279,7 @@ for (const theme of ["dark", "light"]) {
   writeFileSync(resolve(ASSETS, `activity-${theme}.svg`), activitySVG({ ...c, ...g }));
   writeFileSync(resolve(ASSETS, `projects-${theme}.svg`), projHeaderSVG(c));
   for (const p of PROJECTS) {
-    const meta = p.star ? `${p.lang} · ★ ${data.stars[p.key]}` : p.meta;
+    const meta = p.star ? `${p.lang} · ★ ${data.stars[p.key] ?? "—"}` : p.meta;
     writeFileSync(resolve(ASSETS, `proj-${p.key}-${theme}.svg`), cardSVG({ ...c, title: p.title, meta, d1: p.d1, d2: p.d2 }));
   }
 }
