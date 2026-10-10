@@ -39,24 +39,50 @@ if (!TOKEN) {
 
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-const gh = async (path) => {
-  const r = await fetch(`https://api.github.com${path}`, {
-    headers: { Authorization: `Bearer ${TOKEN}`, Accept: "application/vnd.github+json", "User-Agent": USER },
-  });
-  if (!r.ok) throw new Error(`GET ${path} -> ${r.status} ${await r.text()}`);
+// One dropped response used to fail the whole daily run. Transient failures
+// (network errors, timeouts, 5xx, rate limiting, graphql server faults) are
+// retried with backoff; any other 4xx is a real bug and still fails at once.
+const RETRIES = 4;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+const retry = async (fn) => {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await fn();
+    } catch (e) {
+      if (e.fatal || attempt > RETRIES) throw e;
+      const wait = 2 ** attempt; // 2s, 4s, 8s, 16s
+      console.warn(`${e.message} — retry ${attempt}/${RETRIES} in ${wait}s`);
+      await sleep(wait * 1000);
+    }
+  }
+};
+
+const send = async (label, url, init) => {
+  const r = await fetch(url, { ...init, signal: AbortSignal.timeout(30_000) });
+  if (!r.ok) {
+    const e = new Error(`${label} -> ${r.status} ${(await r.text()).slice(0, 300)}`);
+    e.fatal = r.status < 500 && r.status !== 429 && !r.headers.has("retry-after");
+    throw e;
+  }
   return r.json();
 };
 
-const gql = async (query, variables) => {
-  const r = await fetch("https://api.github.com/graphql", {
-    method: "POST",
-    headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json", "User-Agent": USER },
-    body: JSON.stringify({ query, variables }),
+const gh = (path) =>
+  retry(() => send(`GET ${path}`, `https://api.github.com${path}`, {
+    headers: { Authorization: `Bearer ${TOKEN}`, Accept: "application/vnd.github+json", "User-Agent": USER },
+  }));
+
+const gql = (query, variables) =>
+  retry(async () => {
+    const j = await send("graphql", "https://api.github.com/graphql", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json", "User-Agent": USER },
+      body: JSON.stringify({ query, variables }),
+    });
+    if (j.errors) throw new Error(`graphql: ${JSON.stringify(j.errors)}`);
+    return j.data;
   });
-  const j = await r.json();
-  if (j.errors) throw new Error(`graphql: ${JSON.stringify(j.errors)}`);
-  return j.data;
-};
 
 const iso = (d) => d.toISOString();
 
