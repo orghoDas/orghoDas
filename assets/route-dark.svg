@@ -14,8 +14,8 @@
 </style>
 <text x="10" y="26" font-size="12" fill="#FF8C32" font-weight="600" text-anchor="start" letter-spacing="3" class="fade">05 — the route</text><line x1="150.8" y1="21" x2="870" y2="21" stroke="#30363d" stroke-width="1"/>
 <line x1="60" y1="150" x2="104.25" y2="150" stroke="#30363d" stroke-width="1.5"/>
-<line x1="115.75" y1="150" x2="790" y2="150" stroke="#30363d" stroke-width="1.5"/>
-<line x1="790" y1="150" x2="840" y2="150" stroke="#30363d" stroke-width="1.5" stroke-dasharray="4 6"/>
+<line x1="115.75" y1="150" x2="330" y2="150" stroke="#30363d" stroke-width="1.5"/>
+<line x1="342" y1="150" x2="840" y2="150" stroke="#30363d" stroke-width="1.5" stroke-dasharray="4 6"/>
 <linearGradient id="prog" gradientUnits="userSpaceOnUse" x1="60" y1="0" x2="330" y2="0"><stop stop-color="#FFB05C"/><stop offset="1" stop-color="#FF6B00"/></linearGradient>
 <g class="grow" fill="url(#prog)"><rect x="60" y="149.25" width="44.25" height="1.5"/><rect x="115.75" y="149.25" width="214.25" height="1.5"/></g>
 <text x="110" y="106" font-size="13" fill="#e6edf3" font-weight="600" text-anchor="middle">software intern</text>
