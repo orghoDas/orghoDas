@@ -277,7 +277,8 @@ const cardSVG = (t) => `${svgOpen(96, t, 410)}
 function niceStep(max, target = 8) {
   const raw = max / target;
   const mag = 10 ** Math.floor(Math.log10(raw));
-  const step = [1, 2, 2.5, 5, 10].map((m) => m * mag).find((s) => s >= raw);
+  // contributions are whole numbers, so skip fractional steps (e.g. 2.5)
+  const step = [1, 2, 2.5, 5, 10].map((m) => m * mag).find((s) => s >= raw && Number.isInteger(s));
   return Math.max(1, step);
 }
 
