@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Regenerates the live panels from GitHub data:
 //   assets/telemetry.svg          — counts, activity line, language bars
-//   assets/activity.svg           — daily contribution graph (last 26 weeks)
+//   assets/activity.svg           — daily contribution graph (last 31 days)
 //   assets/projects.svg           — "03 — projects" header strip
 //   assets/proj-<key>.svg         — one clickable card per project
 // Design is byte-identical to the hand-built originals — only data cells move.
@@ -115,15 +115,16 @@ async function collect() {
     .map((w) => w.contributionDays.reduce((s, d) => s + d.contributionCount, 0))
     .slice(-14);
 
-  // ~26 weeks of daily counts for the contribution graph panel
-  const graphStart = new Date(now.getTime() - 182 * 864e5);
+  // last 31 days of daily counts for the contribution graph panel
+  const graphStart = new Date(now.getTime() - 31 * 864e5);
   const graphData = await gql(
     `query($u:String!,$f:DateTime!,$t:DateTime!){user(login:$u){contributionsCollection(from:$f,to:$t){contributionCalendar{weeks{contributionDays{contributionCount date}}}}}}`,
     { u: USER, f: iso(graphStart), t: iso(now) }
   );
   const days = graphData.user.contributionsCollection.contributionCalendar.weeks
     .flatMap((w) => w.contributionDays)
-    .map((d) => ({ n: d.contributionCount, date: d.date }));
+    .map((d) => ({ n: d.contributionCount, date: d.date }))
+    .slice(-31);
 
   // language totals across owned, non-fork repos
   const langData = await gql(
@@ -228,16 +229,31 @@ ${t.rects}
 </svg>
 `;
 
-// Daily contribution graph — replaces the dead third-party activity-graph widget.
-const activitySVG = (t) => `${svgOpen(210, t)}
-<text x="10" y="26" font-size="12" fill="${t.acc}" font-weight="600" text-anchor="start" letter-spacing="3" class="fade">contribution telemetry</text><line x1="208.4" y1="21" x2="870" y2="21" stroke="${t.line}" stroke-width="1"/>
-${t.gridlines}
-<path d="${t.area}" fill="url(#area)"/>
-<polyline class="draw" points="${t.points}" fill="none" stroke="${t.acc}" stroke-width="1.5"/>
-<circle class="ping" cx="${t.px}" cy="${t.py}" r="6" fill="none" stroke="${t.acc}" stroke-width="1"/>
-<circle cx="${t.px}" cy="${t.py}" r="2.5" fill="${t.acc}"/>
-${t.months}
-<text x="30" y="52" font-size="10" fill="${t.mut}" font-weight="400" text-anchor="start">peak ${t.peak}/day · ${t.total} in the last 26 weeks</text>
+// Daily contribution graph (last 31 days). Self-hosted replica of the
+// github-readme-activity-graph widget's look (1200×420, sans, 4px line,
+// 10px points, 10% area, faint dashed grid) — recoloured to the orange accent.
+const activitySVG = (t) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" font-family="'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif" font-weight="600">
+<style>
+.pt{animation:pt 1s ease-in-out both}
+@keyframes pt{from{opacity:0;transform:translateX(-20px)}}
+.ln{stroke-dasharray:5000;stroke-dashoffset:5000;animation:ln 5s ease-in-out forwards}
+@keyframes ln{to{stroke-dashoffset:0}}
+</style>
+<text x="600" y="44" font-size="20" fill="${t.mut}" text-anchor="middle">CONTRIBUTION TELEMETRY</text>
+<g stroke="${t.mut}" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="2">
+${t.grid}
+</g>
+<path d="${t.area}" fill="${t.acc}" fill-opacity="0.1"/>
+<path class="ln" d="${t.curve}" fill="none" stroke="${t.acc}" stroke-width="4"/>
+<g class="pt" fill="${t.acc}">
+${t.dots}
+</g>
+<g font-size="12" fill="${t.mut}">
+${t.yLabels}
+${t.xLabels}
+<text x="${t.xMid}" y="398" text-anchor="middle">Days</text>
+<text x="20" y="${t.yMid}" transform="rotate(-90 20 ${t.yMid})" text-anchor="middle" dominant-baseline="hanging">Contributions</text>
+</g>
 </svg>
 `;
 
@@ -257,29 +273,70 @@ const cardSVG = (t) => `${svgOpen(96, t, 410)}
 `;
 
 // ── contribution graph geometry ─────────────────────────────────
-function graph(days, c) {
-  const X0 = 30, X1 = 850, Y0 = 80, Y1 = 165;
+// "nice" axis step (1 / 2 / 2.5 / 5 × 10^k) giving roughly `target` intervals
+function niceStep(max, target = 8) {
+  const raw = max / target;
+  const mag = 10 ** Math.floor(Math.log10(raw));
+  const step = [1, 2, 2.5, 5, 10].map((m) => m * mag).find((s) => s >= raw);
+  return Math.max(1, step);
+}
+
+// Monotone cubic (Fritsch–Carlson) path: smooth like the reference widget, but
+// never overshoots between points, so a zero day never dips below the axis.
+function monotonePath(pts) {
+  const n = pts.length;
+  if (n < 2) return `M${pts[0].x} ${pts[0].y}`;
+  const dx = [], m = [];
+  for (let i = 0; i < n - 1; i++) {
+    dx.push(pts[i + 1].x - pts[i].x);
+    m.push((pts[i + 1].y - pts[i].y) / dx[i]);
+  }
+  const t = [m[0]];
+  for (let i = 1; i < n - 1; i++) t.push(m[i - 1] * m[i] <= 0 ? 0 : (m[i - 1] + m[i]) / 2);
+  t.push(m[n - 2]);
+  for (let i = 0; i < n - 1; i++) {
+    if (m[i] === 0) { t[i] = 0; t[i + 1] = 0; continue; }
+    const a = t[i] / m[i], b = t[i + 1] / m[i], h = a * a + b * b;
+    if (h > 9) { const k = 3 / Math.sqrt(h); t[i] = k * a * m[i]; t[i + 1] = k * b * m[i]; }
+  }
+  const r = (v) => Math.round(v * 10) / 10;
+  let d = `M${pts[0].x} ${pts[0].y}`;
+  for (let i = 0; i < n - 1; i++) {
+    const h = dx[i] / 3;
+    d += ` C${r(pts[i].x + h)} ${r(pts[i].y + t[i] * h)} ${r(pts[i + 1].x - h)} ${r(pts[i + 1].y - t[i + 1] * h)} ${pts[i + 1].x} ${pts[i + 1].y}`;
+  }
+  return d;
+}
+
+function graph(days) {
+  const X0 = 90, X1 = 1150, Y0 = 80, Y1 = 350;
   const vals = days.length ? days : [{ n: 0, date: new Date().toISOString().slice(0, 10) }];
-  const max = Math.max(...vals.map((d) => d.n), 1);
-  const pts = vals.map((d, i) => ({
-    x: Math.round((X0 + ((X1 - X0) * i) / Math.max(1, vals.length - 1)) * 10) / 10,
-    y: Math.round((Y1 - (d.n / max) * (Y1 - Y0)) * 10) / 10,
-  }));
-  const points = pts.map((p) => `${p.x},${p.y}`).join(" ");
-  const area = `M${pts[0].x} ${Y1} L` + points.replace(/ /g, " L") + ` L${pts[pts.length - 1].x} ${Y1} Z`;
-  const gridlines = [0, 0.5, 1]
-    .map((f) => `<line x1="${X0}" y1="${Y1 - f * (Y1 - Y0)}" x2="${X1}" y2="${Y1 - f * (Y1 - Y0)}" stroke="${c.line}" stroke-width="1" stroke-dasharray="2 6"/>`)
+  const peak = Math.max(...vals.map((d) => d.n));
+  const step = niceStep(Math.max(peak, 4));
+  const top = Math.ceil(Math.max(peak, 4) / step) * step;
+  const r = (v) => Math.round(v * 10) / 10;
+  const xAt = (i) => r(X0 + ((X1 - X0) * i) / Math.max(1, vals.length - 1));
+  const yAt = (v) => r(Y1 - (v / top) * (Y1 - Y0));
+  const pts = vals.map((d, i) => ({ x: xAt(i), y: yAt(d.n) }));
+
+  const curve = monotonePath(pts);
+  const area = `${curve} L${pts[pts.length - 1].x} ${Y1} L${pts[0].x} ${Y1} Z`;
+
+  const ticks = [];
+  for (let v = 0; v <= top + 1e-9; v += step) ticks.push(Math.round(v * 100) / 100);
+  const grid = [
+    ...pts.map((p) => `<line x1="${p.x}" y1="${Y0}" x2="${p.x}" y2="${Y1}"/>`),
+    ...ticks.map((v) => `<line x1="${X0}" y1="${yAt(v)}" x2="${X1}" y2="${yAt(v)}"/>`),
+  ].join("\n");
+  const yLabels = ticks
+    .map((v) => `<text x="${X0 - 10}" y="${r(yAt(v) + 4.5)}" text-anchor="end">${v}</text>`)
     .join("\n");
-  const months = vals.reduce((acc, d, i) => {
-    const dt = new Date(d.date + "T00:00:00Z");
-    if (dt.getUTCDate() <= 7 && !acc.seen.has(dt.getUTCMonth())) {
-      acc.seen.add(dt.getUTCMonth());
-      acc.out.push(`<text x="${pts[i].x}" y="188" font-size="10" fill="${c.mut}" font-weight="400" text-anchor="middle">${MONTHS[dt.getUTCMonth()]}</text>`);
-    }
-    return acc;
-  }, { seen: new Set(), out: [] }).out.join("\n");
-  const last = pts[pts.length - 1];
-  return { points, area, gridlines, months, px: last.x, py: last.y, peak: max, total: vals.reduce((s, d) => s + d.n, 0).toLocaleString("en-US") };
+  const xLabels = vals
+    .map((d, i) => `<text x="${pts[i].x}" y="372" text-anchor="middle">${Number(d.date.slice(8, 10))}</text>`)
+    .join("\n");
+  const dots = pts.map((p) => `<circle cx="${p.x}" cy="${p.y}" r="5"/>`).join("\n");
+
+  return { curve, area, grid, yLabels, xLabels, dots, xMid: r((X0 + X1) / 2), yMid: r((Y0 + Y1) / 2) };
 }
 
 // ── main ────────────────────────────────────────────────────────
@@ -293,7 +350,7 @@ mkdirSync(ASSETS, { recursive: true });
 for (const theme of ["dark", "light"]) {
   const c = THEME[theme];
   const { rects, label } = langBars(data.langBytes, c.acc);
-  const g = graph(data.days, c);
+  const g = graph(data.days);
   writeFileSync(resolve(ASSETS, `telemetry-${theme}.svg`),
     telemetrySVG({ ...c, contrib, repos: data.repos, followers: data.followers, since, points, px, py, rects, langs: label }));
   writeFileSync(resolve(ASSETS, `activity-${theme}.svg`), activitySVG({ ...c, ...g }));
