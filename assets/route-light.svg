@@ -15,6 +15,7 @@
 <text x="10" y="26" font-size="12" fill="#E05A00" font-weight="600" text-anchor="start" letter-spacing="3" class="fade">05 — the route</text><line x1="150.8" y1="21" x2="870" y2="21" stroke="#d0d7de" stroke-width="1"/>
 <line x1="60" y1="150" x2="790" y2="150" stroke="#d0d7de" stroke-width="1.5"/>
 <line x1="790" y1="150" x2="840" y2="150" stroke="#d0d7de" stroke-width="1.5" stroke-dasharray="4 6"/>
+<rect class="grow" x="60" y="149.25" width="270" height="1.5" fill="url(#acc)"/>
 <text x="110" y="106" font-size="13" fill="#0d1117" font-weight="600" text-anchor="middle">software intern</text>
 <text x="110" y="124" font-size="11" fill="#57606a" font-weight="400" text-anchor="middle">void studio</text>
 <circle cx="110" cy="150" r="5" fill="none" stroke="#E05A00" stroke-width="1.5"/>
