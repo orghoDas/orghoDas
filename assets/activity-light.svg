@@ -44,8 +44,8 @@
 <line x1="90" y1="147.5" x2="1150" y2="147.5"/>
 <line x1="90" y1="80" x2="1150" y2="80"/>
 </g>
-<path d="M90 350 C101.8 350 113.5 350 125.3 350 C137.1 350 148.9 350 160.7 350 C172.5 350 184.2 350 196 350 C207.8 350 219.5 350 231.3 350 C243.1 350 254.9 350 266.7 350 C278.5 350 290.2 350 302 350 C313.8 350 325.5 350 337.3 350 C349.1 350 360.9 350 372.7 350 C384.5 350 396.2 350 408 350 C419.8 350 431.5 350 443.3 350 C455.1 350 466.9 350 478.7 350 C490.5 350 502.2 350 514 350 C525.8 350 537.5 350 549.3 350 C561.1 350 572.9 309.5 584.7 309.5 C596.5 309.5 608.2 350 620 350 C631.8 350 643.5 350 655.3 350 C667.1 350 678.9 350 690.7 350 C702.5 350 714.2 350 726 350 C737.8 350 749.5 350 761.3 350 C773.1 350 784.9 350 796.7 350 C808.5 350 820.2 350 832 350 C843.8 350 855.5 302.7 867.3 282.5 C879.1 262.2 890.9 228.5 902.7 228.5 C914.5 228.5 926.2 350 938 350 C949.8 350 961.5 215 973.3 215 C985.1 215 996.9 350 1008.7 350 C1020.5 350 1032.2 107 1044 107 C1055.8 107 1067.5 194.8 1079.3 228.5 C1091.1 262.3 1102.9 291.5 1114.7 309.5 C1126.5 327.5 1138.2 327.5 1150 336.5 L1150 350 L90 350 Z" fill="#E05A00" fill-opacity="0.1"/>
-<path class="ln" d="M90 350 C101.8 350 113.5 350 125.3 350 C137.1 350 148.9 350 160.7 350 C172.5 350 184.2 350 196 350 C207.8 350 219.5 350 231.3 350 C243.1 350 254.9 350 266.7 350 C278.5 350 290.2 350 302 350 C313.8 350 325.5 350 337.3 350 C349.1 350 360.9 350 372.7 350 C384.5 350 396.2 350 408 350 C419.8 350 431.5 350 443.3 350 C455.1 350 466.9 350 478.7 350 C490.5 350 502.2 350 514 350 C525.8 350 537.5 350 549.3 350 C561.1 350 572.9 309.5 584.7 309.5 C596.5 309.5 608.2 350 620 350 C631.8 350 643.5 350 655.3 350 C667.1 350 678.9 350 690.7 350 C702.5 350 714.2 350 726 350 C737.8 350 749.5 350 761.3 350 C773.1 350 784.9 350 796.7 350 C808.5 350 820.2 350 832 350 C843.8 350 855.5 302.7 867.3 282.5 C879.1 262.2 890.9 228.5 902.7 228.5 C914.5 228.5 926.2 350 938 350 C949.8 350 961.5 215 973.3 215 C985.1 215 996.9 350 1008.7 350 C1020.5 350 1032.2 107 1044 107 C1055.8 107 1067.5 194.8 1079.3 228.5 C1091.1 262.3 1102.9 291.5 1114.7 309.5 C1126.5 327.5 1138.2 327.5 1150 336.5" fill="none" stroke="#E05A00" stroke-width="4"/>
+<path d="M90 350 C101.8 350 113.5 350 125.3 350 C137.1 350 148.9 350 160.7 350 C172.5 350 184.2 350 196 350 C207.8 350 219.5 350 231.3 350 C243.1 350 254.9 350 266.7 350 C278.5 350 290.2 350 302 350 C313.8 350 325.5 350 337.3 350 C349.1 350 360.9 350 372.7 350 C384.5 350 396.2 350 408 350 C419.8 350 431.5 350 443.3 350 C455.1 350 466.9 350 478.7 350 C490.5 350 502.2 350 514 350 C525.8 350 537.5 309.5 549.3 309.5 C561.1 309.5 572.9 350 584.7 350 C596.5 350 608.2 350 620 350 C631.8 350 643.5 350 655.3 350 C667.1 350 678.9 350 690.7 350 C702.5 350 714.2 350 726 350 C737.8 350 749.5 350 761.3 350 C773.1 350 784.9 350 796.7 350 C808.5 350 820.2 302.8 832 282.5 C843.8 262.3 855.5 228.5 867.3 228.5 C879.1 228.5 890.9 350 902.7 350 C914.5 350 926.2 215 938 215 C949.8 215 961.5 350 973.3 350 C985.1 350 996.9 107 1008.7 107 C1020.5 107 1032.2 194.8 1044 228.5 C1055.8 262.3 1067.5 291.5 1079.3 309.5 C1091.1 327.5 1102.9 329.7 1114.7 336.5 C1126.5 343.2 1138.2 345.5 1150 350 L1150 350 L90 350 Z" fill="#E05A00" fill-opacity="0.1"/>
+<path class="ln" d="M90 350 C101.8 350 113.5 350 125.3 350 C137.1 350 148.9 350 160.7 350 C172.5 350 184.2 350 196 350 C207.8 350 219.5 350 231.3 350 C243.1 350 254.9 350 266.7 350 C278.5 350 290.2 350 302 350 C313.8 350 325.5 350 337.3 350 C349.1 350 360.9 350 372.7 350 C384.5 350 396.2 350 408 350 C419.8 350 431.5 350 443.3 350 C455.1 350 466.9 350 478.7 350 C490.5 350 502.2 350 514 350 C525.8 350 537.5 309.5 549.3 309.5 C561.1 309.5 572.9 350 584.7 350 C596.5 350 608.2 350 620 350 C631.8 350 643.5 350 655.3 350 C667.1 350 678.9 350 690.7 350 C702.5 350 714.2 350 726 350 C737.8 350 749.5 350 761.3 350 C773.1 350 784.9 350 796.7 350 C808.5 350 820.2 302.8 832 282.5 C843.8 262.3 855.5 228.5 867.3 228.5 C879.1 228.5 890.9 350 902.7 350 C914.5 350 926.2 215 938 215 C949.8 215 961.5 350 973.3 350 C985.1 350 996.9 107 1008.7 107 C1020.5 107 1032.2 194.8 1044 228.5 C1055.8 262.3 1067.5 291.5 1079.3 309.5 C1091.1 327.5 1102.9 329.7 1114.7 336.5 C1126.5 343.2 1138.2 345.5 1150 350" fill="none" stroke="#E05A00" stroke-width="4"/>
 <g class="pt" fill="#E05A00">
 <circle cx="90" cy="350" r="5"/>
 <circle cx="125.3" cy="350" r="5"/>
@@ -60,24 +60,24 @@
 <circle cx="443.3" cy="350" r="5"/>
 <circle cx="478.7" cy="350" r="5"/>
 <circle cx="514" cy="350" r="5"/>
-<circle cx="549.3" cy="350" r="5"/>
-<circle cx="584.7" cy="309.5" r="5"/>
+<circle cx="549.3" cy="309.5" r="5"/>
+<circle cx="584.7" cy="350" r="5"/>
 <circle cx="620" cy="350" r="5"/>
 <circle cx="655.3" cy="350" r="5"/>
 <circle cx="690.7" cy="350" r="5"/>
 <circle cx="726" cy="350" r="5"/>
 <circle cx="761.3" cy="350" r="5"/>
 <circle cx="796.7" cy="350" r="5"/>
-<circle cx="832" cy="350" r="5"/>
-<circle cx="867.3" cy="282.5" r="5"/>
-<circle cx="902.7" cy="228.5" r="5"/>
-<circle cx="938" cy="350" r="5"/>
-<circle cx="973.3" cy="215" r="5"/>
-<circle cx="1008.7" cy="350" r="5"/>
-<circle cx="1044" cy="107" r="5"/>
-<circle cx="1079.3" cy="228.5" r="5"/>
-<circle cx="1114.7" cy="309.5" r="5"/>
-<circle cx="1150" cy="336.5" r="5"/>
+<circle cx="832" cy="282.5" r="5"/>
+<circle cx="867.3" cy="228.5" r="5"/>
+<circle cx="902.7" cy="350" r="5"/>
+<circle cx="938" cy="215" r="5"/>
+<circle cx="973.3" cy="350" r="5"/>
+<circle cx="1008.7" cy="107" r="5"/>
+<circle cx="1044" cy="228.5" r="5"/>
+<circle cx="1079.3" cy="309.5" r="5"/>
+<circle cx="1114.7" cy="336.5" r="5"/>
+<circle cx="1150" cy="350" r="5"/>
 </g>
 <g font-size="12" fill="#57606a">
 <text x="80" y="354.5" text-anchor="end">0</text>
@@ -85,37 +85,37 @@
 <text x="80" y="219.5" text-anchor="end">10</text>
 <text x="80" y="152" text-anchor="end">15</text>
 <text x="80" y="84.5" text-anchor="end">20</text>
-<text x="90" y="372" text-anchor="middle">25</text>
-<text x="125.3" y="372" text-anchor="middle">26</text>
-<text x="160.7" y="372" text-anchor="middle">27</text>
-<text x="196" y="372" text-anchor="middle">28</text>
-<text x="231.3" y="372" text-anchor="middle">29</text>
-<text x="266.7" y="372" text-anchor="middle">30</text>
-<text x="302" y="372" text-anchor="middle">31</text>
-<text x="337.3" y="372" text-anchor="middle">1</text>
-<text x="372.7" y="372" text-anchor="middle">2</text>
-<text x="408" y="372" text-anchor="middle">3</text>
-<text x="443.3" y="372" text-anchor="middle">4</text>
-<text x="478.7" y="372" text-anchor="middle">5</text>
-<text x="514" y="372" text-anchor="middle">6</text>
-<text x="549.3" y="372" text-anchor="middle">7</text>
-<text x="584.7" y="372" text-anchor="middle">8</text>
-<text x="620" y="372" text-anchor="middle">9</text>
-<text x="655.3" y="372" text-anchor="middle">10</text>
-<text x="690.7" y="372" text-anchor="middle">11</text>
-<text x="726" y="372" text-anchor="middle">12</text>
-<text x="761.3" y="372" text-anchor="middle">13</text>
-<text x="796.7" y="372" text-anchor="middle">14</text>
-<text x="832" y="372" text-anchor="middle">15</text>
-<text x="867.3" y="372" text-anchor="middle">16</text>
-<text x="902.7" y="372" text-anchor="middle">17</text>
-<text x="938" y="372" text-anchor="middle">18</text>
-<text x="973.3" y="372" text-anchor="middle">19</text>
-<text x="1008.7" y="372" text-anchor="middle">20</text>
-<text x="1044" y="372" text-anchor="middle">21</text>
-<text x="1079.3" y="372" text-anchor="middle">22</text>
-<text x="1114.7" y="372" text-anchor="middle">23</text>
-<text x="1150" y="372" text-anchor="middle">24</text>
+<text x="90" y="372" text-anchor="middle">26</text>
+<text x="125.3" y="372" text-anchor="middle">27</text>
+<text x="160.7" y="372" text-anchor="middle">28</text>
+<text x="196" y="372" text-anchor="middle">29</text>
+<text x="231.3" y="372" text-anchor="middle">30</text>
+<text x="266.7" y="372" text-anchor="middle">31</text>
+<text x="302" y="372" text-anchor="middle">1</text>
+<text x="337.3" y="372" text-anchor="middle">2</text>
+<text x="372.7" y="372" text-anchor="middle">3</text>
+<text x="408" y="372" text-anchor="middle">4</text>
+<text x="443.3" y="372" text-anchor="middle">5</text>
+<text x="478.7" y="372" text-anchor="middle">6</text>
+<text x="514" y="372" text-anchor="middle">7</text>
+<text x="549.3" y="372" text-anchor="middle">8</text>
+<text x="584.7" y="372" text-anchor="middle">9</text>
+<text x="620" y="372" text-anchor="middle">10</text>
+<text x="655.3" y="372" text-anchor="middle">11</text>
+<text x="690.7" y="372" text-anchor="middle">12</text>
+<text x="726" y="372" text-anchor="middle">13</text>
+<text x="761.3" y="372" text-anchor="middle">14</text>
+<text x="796.7" y="372" text-anchor="middle">15</text>
+<text x="832" y="372" text-anchor="middle">16</text>
+<text x="867.3" y="372" text-anchor="middle">17</text>
+<text x="902.7" y="372" text-anchor="middle">18</text>
+<text x="938" y="372" text-anchor="middle">19</text>
+<text x="973.3" y="372" text-anchor="middle">20</text>
+<text x="1008.7" y="372" text-anchor="middle">21</text>
+<text x="1044" y="372" text-anchor="middle">22</text>
+<text x="1079.3" y="372" text-anchor="middle">23</text>
+<text x="1114.7" y="372" text-anchor="middle">24</text>
+<text x="1150" y="372" text-anchor="middle">25</text>
 <text x="620" y="398" text-anchor="middle">Days</text>
 <text x="20" y="215" transform="rotate(-90 20 215)" text-anchor="middle" dominant-baseline="hanging">Contributions</text>
 </g>
